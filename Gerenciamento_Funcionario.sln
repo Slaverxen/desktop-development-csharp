@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32630.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciamentoFuncionario.AcessoDados", "src\GerenciamentoFuncionario.AcessoDados\GerenciamentoFuncionario.AcessoDados.csproj", "{07D5BFF0-541C-4371-9B15-F5D846C831CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciamentoFuncionario.AcessoDados", "src\GerenciamentoFuncionario.AcessoDados\GerenciamentoFuncionario.AcessoDados.csproj", "{07D5BFF0-541C-4371-9B15-F5D846C831CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciamentoFuncionario.Comuns", "src\GerenciamentoFuncionario.Comuns\GerenciamentoFuncionario.Comuns.csproj", "{EE7E0439-5E5C-49A5-BDAB-EE6A46386FCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciamentoFuncionario.Comuns", "src\GerenciamentoFuncionario.Comuns\GerenciamentoFuncionario.Comuns.csproj", "{EE7E0439-5E5C-49A5-BDAB-EE6A46386FCF}"
 EndProject
 Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "GerenciamentoFuncionario.WinUI (Package)", "src\GerenciamentoFuncionario.WinUI\GerenciamentoFuncionario.WinUI (Package)\GerenciamentoFuncionario.WinUI (Package).wapproj", "{170B1921-D2A5-4687-BA42-CE4A14C5B2FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciamentoFuncionario.WinUI", "src\GerenciamentoFuncionario.WinUI\GerenciamentoFuncionario.WinUI\GerenciamentoFuncionario.WinUI.csproj", "{19EC8329-681D-40DD-B1E7-5D857BB22D15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciamentoFuncionario.WinUI", "src\GerenciamentoFuncionario.WinUI\GerenciamentoFuncionario.WinUI\GerenciamentoFuncionario.WinUI.csproj", "{19EC8329-681D-40DD-B1E7-5D857BB22D15}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bibliotecas", "Bibliotecas", "{2E6EF4F7-8F8B-407A-AE32-2A86C72DA89F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{AA404AB2-6F76-4332-87F8-A9119DE79A6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Terminais", "Terminais", "{01C04E5E-06D1-4A12-8CC8-A32F4B69DF91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciamentoFuncionario.Console", "src\GerenciamentoFuncionario.Console\GerenciamentoFuncionario.Console.csproj", "{6A92927A-31B6-4884-9EF5-C090CC03D19F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,22 @@ Global
 		{19EC8329-681D-40DD-B1E7-5D857BB22D15}.Release|x64.Build.0 = Release|x64
 		{19EC8329-681D-40DD-B1E7-5D857BB22D15}.Release|x86.ActiveCfg = Release|x86
 		{19EC8329-681D-40DD-B1E7-5D857BB22D15}.Release|x86.Build.0 = Release|x86
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Debug|arm64.Build.0 = Debug|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Debug|x64.Build.0 = Debug|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Debug|x86.Build.0 = Debug|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Release|arm64.ActiveCfg = Release|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Release|arm64.Build.0 = Release|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Release|x64.ActiveCfg = Release|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Release|x64.Build.0 = Release|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Release|x86.ActiveCfg = Release|Any CPU
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +122,7 @@ Global
 		{EE7E0439-5E5C-49A5-BDAB-EE6A46386FCF} = {2E6EF4F7-8F8B-407A-AE32-2A86C72DA89F}
 		{170B1921-D2A5-4687-BA42-CE4A14C5B2FB} = {AA404AB2-6F76-4332-87F8-A9119DE79A6C}
 		{19EC8329-681D-40DD-B1E7-5D857BB22D15} = {AA404AB2-6F76-4332-87F8-A9119DE79A6C}
+		{6A92927A-31B6-4884-9EF5-C090CC03D19F} = {01C04E5E-06D1-4A12-8CC8-A32F4B69DF91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E07EE932-4F4F-46FC-ACD2-0CFF20F2FE70}
