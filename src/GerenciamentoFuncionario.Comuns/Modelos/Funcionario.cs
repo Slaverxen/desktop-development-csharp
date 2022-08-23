@@ -8,7 +8,7 @@ namespace GerenciamentoFuncionario.Comuns.Modelos
         public Funcionario(int id, string nomeCompleto, int cargoId,
             bool eBebedorCafe)
         {
-            Id = id;
+            //Id = id;
             NomeCompleto = nomeCompleto;
             CargoId = cargoId;
             EBebedorCafe = eBebedorCafe;
