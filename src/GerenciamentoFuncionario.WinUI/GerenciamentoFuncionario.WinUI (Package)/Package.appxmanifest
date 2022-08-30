@@ -7,13 +7,13 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="e127a9dc-914e-45de-aa5f-15727c199f8f"
-    Publisher="CN=filipe.bpinto"
+    Name="1dd88493-56c0-42d0-b4a8-92a96dbef318"
+    Publisher="CN=gilvan.dgalindo"
     Version="1.0.0.0" />
 
   <Properties>
     <DisplayName>GerenciamentoFuncionario.WinUI (Package)</DisplayName>
-    <PublisherDisplayName>filipe.bpinto</PublisherDisplayName>
+    <PublisherDisplayName>gilvan.dgalindo</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
 
