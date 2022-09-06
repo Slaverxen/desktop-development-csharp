@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GerenciamentoFuncionario.WPF" 
-        xmlns:controls="clr-namespace:GerenciamentoFuncionario.WPF.Controls"
+        xmlns:controls="clr-namespace:GerenciamentoFuncionario.WPF.UserControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -26,21 +26,21 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <Button Content="Atualizar" Margin="10"
+            <Button Content="Atualizar" Margin="10" 
                     Command="{Binding ComandoCarregar, Mode=OneWay}"
                     />
             <ListView Grid.Row="1" 
-                      ItemsSource="{Binding  Funcionarios, Mode=OneWay}"
-                      SelectedItem="{Binding  FuncionarioSelecionado, Mode=TwoWay}"
+                      ItemsSource="{Binding Funcionarios, Mode=OneWay}"
                       DisplayMemberPath="NomeCompleto"
+                      SelectedItem="{Binding FuncionarioSelecionado, Mode=TwoWay}"
                       />
         </Grid>
 
         <!--Área principal-->
         <Grid Grid.Row="1" 
               Grid.Column="1"
-              Visibility="{Binding FuncionarioEstaSelecionado, Mode=OneWay, 
-                Converter={StaticResource BooleanToVisibilityConverter}}">
+              Visibility="{Binding FuncionarioEstaSelecionado, Mode=OneWay}"
+              >
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
@@ -49,54 +49,60 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <!--<RowDefinition />-->
+                <RowDefinition />
             </Grid.RowDefinitions>
 
-            <TextBlock Text="Nome completo" 
-                Margin="10,10,10,0" />
+            <TextBlock Text="Nome completo" Margin="10,10,10,0" Grid.Row="0" />
             <TextBox 
-                Grid.Row="1"
+                Grid.Row="1" 
                 x:Name="NomeCompleto" 
                 Text="{Binding FuncionarioSelecionado.NomeCompleto, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                 Margin="10" />
 
-            <TextBlock Text="Digite sua data de nascimento"
-                       Grid.Row="2"
-                Margin="10,10,10,0" />
+            <TextBlock 
+                Grid.Row="2" 
+                Text="Digite sua data de nascimento" Margin="10,10,10,0" />
             <DatePicker    
-                Grid.Row="3"               
+                Grid.Row="3" 
                 Margin="10"
-                SelectedDate="{Binding FuncionarioSelecionado.DataHoraEntrada, Mode=TwoWay}"
                 />
 
-            <TextBlock Text="Cargo"
-                       Grid.Row="4"
-                Margin="10,10,10,0" />
+            <TextBlock 
+                Grid.Row="4" 
+                Text="Cargo" Margin="10,10,10,0" />
             <ComboBox 
                 x:Name="Cargo" 
                 Grid.Row="5" 
                 Margin="10" 
                 HorizontalAlignment="Stretch"
-                ItemsSource="{Binding  Cargos, Mode=OneWay}"
+                ItemsSource="{Binding Cargos, Mode=OneWay}"
                 DisplayMemberPath="CargoNome"
                 SelectedValuePath="Id"
-                SelectedValue="{Binding  FuncionarioSelecionado.CargoId, Mode=TwoWay}"
+                SelectedValue="{Binding FuncionarioSelecionado.CargoId, Mode=TwoWay}"
                 />
-
 
             <CheckBox 
                 Grid.Row="6" 
                 Content="Bebe café?" 
                 Margin="10"
-                IsChecked="{Binding  FuncionarioSelecionado.EBebedorCafe, Mode=TwoWay}"
+                IsChecked="{Binding FuncionarioSelecionado.EBebedorCafe, Mode=TwoWay}"
                 />
-            <Button 
-                IsEnabled="{Binding  FuncionarioSelecionado.PodeSalvar, Mode=OneWay}"
-                Command="{Binding FuncionarioSelecionado.ComandoSalvar, Mode=OneWay}"
-                Grid.Row="7" 
+            <!--<Button 
+                IsEnabled="{Binding ViewModel.FuncionarioSelecionado.PodeSalvar, Mode=OneWay}"
+                Click="{Binding ViewModel.FuncionarioSelecionado.Salvar}"
+                Grid.Row="4" 
                 Content="Save" 
                 Margin="10 10 10 30"
+                VerticalAlignment="Bottom" 
+                HorizontalAlignment="Left" 
+                />-->
+            <Button 
+                Command="{Binding FuncionarioSelecionado.ComandoSalvar, Mode=OneWay}"
+                Grid.Row="8" 
+                Content="Save" 
+                Margin="10 10 10 30"
+                VerticalAlignment="Bottom" 
+                HorizontalAlignment="Left" 
                 />
         </Grid>
 

@@ -27,9 +27,15 @@ namespace GerenciamentoFuncionario.WPF
         public MainWindow()
         {
             InitializeComponent();
-            _viewModel = new MainWindowViewModel(new FuncionarioProvedorDados(), new CargoProvedorDados());
+            _viewModel = new MainWindowViewModel(
+                new FuncionarioProvedorDados(),
+                new CargoProvedorDados()
+                );
+
             DataContext = _viewModel;
             Loaded += MainWindow_Loaded;
+
+
         }
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
